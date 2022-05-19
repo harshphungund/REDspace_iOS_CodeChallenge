@@ -1,34 +1,21 @@
-# iOS Tech Challenge: What to eat. 
+Rick and Morty Solution Description 
 
-Welcome to the Orderbird Tech Challenge :-).
-
-"What to eat" is an app that helps you find some food on days where you are doubting what to bring to your stomach.
-
-It has a simple table view, which fetches images from flickr API service, and populates a title and description label in the UI.
-Unfortunately one of our developers had introduced some bugs by accident and we hope that you can help to find and fix them.
-
-**Bug Fixes:**
-First task would be to implement some bug fixes some of which are minor UI cosmetics and some which may be of a more serious nature and impact performance.
-We also noticed that the text within the cells seems to be truncated, would be nice to have this fixed also.
+This repo contains the solution for  ios code challenge using the RICK and Morty API.
+The app contains 2 main views: 1st View on launch is showing a list of characters from the  Rick and Morty API and secondly the Detail View on tap of one of the characters. Also there is a Search bar that allows user to search for a character by name.
 
 
-**New Feature requirements:**
-We would like you to add the ability to present a detail view of a tapped image cell to display a bigger more detailed image from the API with more details and text.
-Ideally this would envolve pushing to a new ViewController.
+Architecture/Design patterns. 
 
-We also think that it would be nice to have the ability to sort the images by Date, perhaps this could displayed in a UISegmentedControl or have some toggle component.
+The solution has been realised using MVVM-Coordinator combination. Coordinator helps to decouple the 2 views to achieve Separation on Concerns on Viewcontroller level.
+MVVM takes care  of fetching the API data and  showing it in List/Detail views in a decoupled manner. 
+A generic Network layer has been written which can be resued to work with any API. Networking code has been comppletely written using native support and no 3rd party library has been used.
+Unit tests have been included for APIs and ViewModels.
 
-Finally a re-write of the Networking layer in Swift 4 (or latest) would be required & add unit tests for the new module.
 
-Some guidelines:
 
-- Showcase your abilities, and use the task to demonstrate your idea of best practices, regarding coding style, project structure, patterns, design, etc.
-- Don't use third party libraries.
-- please do not rewrite the app completely in SWIFT ;-) (as we are more curious on how you work with the objective C codebase)
-- There is no right or wrong solution, as long as it is your solution.
-- If you only have time to do one thing please do it as good as you possible can. It is better to have a nice but incomplete solution rather than a mediocre "feature complete" one. We want to get a good impression of your abilities.
-- Be prepared to describe your work in detail.
-- Flickr photo search: <https://www.flickr.com/services/api/flickr.photos.search.html>
-
+## Platforms/ToolS used
+- iOS 15.4
+- Xcode 13.3.1
+- Swift 5.0 
 
 
