@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QMQ-Pq-X3s">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenTitleImage" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-wb-lcy">
+                                <rect key="frame" x="124" y="298" width="166" height="310"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenTitleLogo" translatesAutoresizingMaskIntoConstraints="NO" id="h8s-vc-Q7b">
+                                <rect key="frame" x="48" y="54" width="318" height="140"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8st-7w-9mh"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="h8s-vc-Q7b" firstAttribute="top" secondItem="8st-7w-9mh" secondAttribute="top" constant="10" id="EWe-HF-xSx"/>
+                            <constraint firstItem="6Q8-wb-lcy" firstAttribute="centerX" secondItem="8st-7w-9mh" secondAttribute="centerX" id="WYW-xE-X3i"/>
+                            <constraint firstItem="h8s-vc-Q7b" firstAttribute="centerX" secondItem="QMQ-Pq-X3s" secondAttribute="centerX" id="Yax-cz-SaG"/>
+                            <constraint firstItem="6Q8-wb-lcy" firstAttribute="width" secondItem="QMQ-Pq-X3s" secondAttribute="width" multiplier="0.400966" id="b7b-gz-4DE"/>
+                            <constraint firstItem="h8s-vc-Q7b" firstAttribute="width" secondItem="QMQ-Pq-X3s" secondAttribute="width" multiplier="0.768692" id="lMl-vl-JDc"/>
+                            <constraint firstItem="6Q8-wb-lcy" firstAttribute="height" secondItem="QMQ-Pq-X3s" secondAttribute="height" multiplier="0.345536" id="mzY-6e-ape"/>
+                            <constraint firstItem="6Q8-wb-lcy" firstAttribute="centerY" secondItem="8st-7w-9mh" secondAttribute="centerY" id="ua9-yq-yy4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreenTitleImage" width="166" height="220"/>
+        <image name="LaunchScreenTitleLogo" width="329" height="140"/>
+    </resources>
+</document>
